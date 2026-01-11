@@ -95,11 +95,11 @@ function initLazyLoading() {
 // MOBILE MENU TOGGLE
 // ===================================
 function toggleMobileMenu() {
-    const mobileMenu = document.querySelector('.mobile-menu');
+    const menu = document.getElementById('navbarMenu');
     const hamburger = document.querySelector('.hamburger');
     
-    if (mobileMenu && hamburger) {
-        mobileMenu.classList.toggle('active');
+    if (menu && hamburger) {
+        menu.classList.toggle('active');
         hamburger.classList.toggle('active');
         document.body.classList.toggle('menu-open');
     }
